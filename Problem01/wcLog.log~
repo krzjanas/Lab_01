@@ -1,0 +1,57 @@
+2015-11-22 22:53:38,127 - wc_log.module - INFO - 
+	Func: PyWC.__init__	 Ans = None
+2015-11-22 22:53:38,127 - wc_log.module - INFO - 
+	Func: PyWC.usedFile	 Ans = TestFileForPyWC.dat
+2015-11-22 22:53:38,127 - wc_log.module - INFO - 
+	Func: PyWC.countLines	 Ans = 4
+2015-11-22 22:53:38,127 - wc_log.module - INFO - 
+	Func: PyWC.countWords	 Ans = 11
+2015-11-22 22:53:38,127 - wc_log.module - INFO - 
+	Func: PyWC.countCharakters	 Ans = 49
+2015-11-22 22:55:07,812 - wc_log.module.main - INFO - WC module main
+2015-11-22 22:55:07,813 - wc_log.module - INFO - 
+	Func: PyWC.__init__	 Ans = None
+2015-11-22 22:55:07,813 - wc_log.module - INFO - 
+	Func: PyWC.usedFile	 Ans = TestFileForPyWC.dat
+2015-11-22 22:55:07,813 - wc_log.module - INFO - 
+	Func: PyWC.countLines	 Ans = 4
+2015-11-22 22:55:07,813 - wc_log.module - INFO - 
+	Func: PyWC.countWords	 Ans = 11
+2015-11-22 22:55:07,813 - wc_log.module - INFO - 
+	Func: PyWC.countCharakters	 Ans = 49
+2015-11-22 22:55:32,563 - wc_log.module.main - INFO - 
+	WC module - main
+2015-11-22 22:55:32,564 - wc_log.module - INFO - 
+	Func: PyWC.__init__	 Ans = None
+2015-11-22 22:55:32,564 - wc_log.module - INFO - 
+	Func: PyWC.usedFile	 Ans = TestFileForPyWC.dat
+2015-11-22 22:55:32,564 - wc_log.module - INFO - 
+	Func: PyWC.countLines	 Ans = 4
+2015-11-22 22:55:32,564 - wc_log.module - INFO - 
+	Func: PyWC.countWords	 Ans = 11
+2015-11-22 22:55:32,564 - wc_log.module - INFO - 
+	Func: PyWC.countCharakters	 Ans = 49
+2015-11-22 22:55:52,416 - wc_log.module.main - INFO - 
+	WC module - main
+2015-11-22 22:55:52,416 - wc_log.module - INFO - 
+	Func: PyWC.__init__	 Ans = None
+2015-11-22 22:55:52,417 - wc_log.module - INFO - 
+	Func: PyWC.usedFile	 Ans = TestFileForPyWC.dat
+2015-11-22 22:55:52,417 - wc_log.module - INFO - 
+	Func: PyWC.countLines	 Ans = 4
+2015-11-22 22:55:52,417 - wc_log.module - INFO - 
+	Func: PyWC.countWords	 Ans = 11
+2015-11-22 22:55:52,417 - wc_log.module - INFO - 
+	Func: PyWC.countCharakters	 Ans = 49
+2015-11-22 22:57:49,208 - wc_log.module - INFO - 
+	Func: PyWC.__init__	 Ans = None
+2015-11-22 22:57:49,209 - wc_log.module - INFO - 
+	Func: PyWC.usedFile	 Ans = PyWC.py
+2015-11-22 22:57:49,209 - wc_log.module - INFO - 
+	Func: PyWC.countWords	 Ans = 158
+2015-11-22 22:58:54,361 - wc_log.module - INFO - 
+	Func: PyWC.__init__	 Ans = None
+2015-11-22 22:58:54,361 - wc_log.module - INFO - 
+	Func: PyWC.usedFile	 Ans = PyWC.py
+2015-11-22 22:58:54,361 - wc_log.module - INFO - 
+	Func: PyWC.countWords	 Ans = 159

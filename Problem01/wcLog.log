@@ -1,0 +1,24 @@
+2015-11-22 23:45:41,340 - wc_log.module.main - 	Start main in PyWC module
+2015-11-22 23:45:41,340 - wc_log.module - Constr: PyWC obiect creation for file TestFileForPyWC.dat
+2015-11-22 23:45:41,341 - wc_log.module - Func: PyWC.usedFile	 Ans = TestFileForPyWC.dat
+2015-11-22 23:45:41,341 - wc_log.module - Func: PyWC.countLines	 Ans = 4
+2015-11-22 23:45:41,341 - wc_log.module - Func: PyWC.countWords	 Ans = 11
+2015-11-22 23:45:41,341 - wc_log.module - Func: PyWC.countCharakters	 Ans = 49
+2015-11-22 23:45:41,341 - wc_log.module.main - 	Finish main in PyWC module
+2015-11-22 23:45:47,347 - wc_log.main - 	Start MainWC program
+2015-11-22 23:45:47,348 - wc_log.module - Constr: PyWC obiect creation for file PyWC.py
+2015-11-22 23:45:47,348 - wc_log.module - Func: PyWC.usedFile	 Ans = PyWC.py
+2015-11-22 23:45:47,348 - wc_log.module - Func: PyWC.countWords	 Ans = 192
+2015-11-22 23:45:47,348 - wc_log.main - 	Finish MainWC program
+2015-11-22 23:45:55,031 - wc_log.module - Constr: PyWC obiect creation for file TestFileForPyWC.dat
+2015-11-22 23:45:55,031 - wc_log.module - Func: PyWC.countCharakters	 Ans = 49
+2015-11-22 23:45:55,031 - wc_log.test - Func: TestPyWC.test_countCharakters	 Ans = None
+2015-11-22 23:45:55,031 - wc_log.module - Constr: PyWC obiect creation for file TestFileForPyWC.dat
+2015-11-22 23:45:55,031 - wc_log.module - Func: PyWC.countLines	 Ans = 4
+2015-11-22 23:45:55,031 - wc_log.test - Func: TestPyWC.test_countLines	 Ans = None
+2015-11-22 23:45:55,031 - wc_log.module - Constr: PyWC obiect creation for file TestFileForPyWC.dat
+2015-11-22 23:45:55,032 - wc_log.module - Func: PyWC.countWords	 Ans = 11
+2015-11-22 23:45:55,032 - wc_log.test - Func: TestPyWC.test_countWords	 Ans = None
+2015-11-22 23:45:55,032 - wc_log.module - Constr: PyWC obiect creation for file TestFileForPyWC.dat
+2015-11-22 23:45:55,032 - wc_log.module - Func: PyWC.usedFile	 Ans = TestFileForPyWC.dat
+2015-11-22 23:45:55,032 - wc_log.test - Func: TestPyWC.test_usedFile	 Ans = None
