@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from unittest import TestCase
+from unittest.mock import patch
 
 import PyWC
 
@@ -13,28 +14,35 @@ def decorTest(fun):
     return PyWC.decor(fun,testWC_log)
 
 class TestPyWC(TestCase):
-    testFileName = PyWC.testFileName
 
     @decorTest
-    def test_usedFile(self):
-        TestWC = PyWC.PyWC(self.testFileName)
-        self.assertEqual(TestWC.usedFile(),self.testFileName)
+    @patch('PyWC.PyWC._setValues', return_value=None)
+    def test_usedFile(self, mock_question):
+        testFileName = "TEST.dat"
+        TestWC = PyWC.PyWC(testFileName)
+        self.assertEqual(TestWC.usedFile(),testFileName)
 
     @decorTest
-    def test_countLines(self):
-        TestWC = PyWC.PyWC(self.testFileName)
-        linNumber = 4
+    @patch('PyWC.PyWC._setValues', return_value=None)
+    def test_countLines(self, mock_question):
+        TestWC = PyWC.PyWC("")
+        TestWC.linesCounter = 5
+        linNumber = 5
         self.assertEqual(TestWC.countLines(),linNumber)
 
     @decorTest
-    def test_countWords(self):
-        TestWC = PyWC.PyWC(self.testFileName)
+    @patch('PyWC.PyWC._setValues', return_value=None)
+    def test_countWords(self, mock_question):
+        TestWC = PyWC.PyWC("")
+        TestWC.wordsCounter = 11
         wordsNumber = 11
         self.assertEqual(TestWC.countWords(),wordsNumber)
 
     @decorTest
-    def test_countCharakters(self):
-        TestWC = PyWC.PyWC(self.testFileName)
+    @patch('PyWC.PyWC._setValues', return_value=None)
+    def test_countCharakters(self, mock_question):
+        TestWC = PyWC.PyWC("")
+        TestWC.charaktersCounter = 49
         charNumber = 49
         self.assertEqual(TestWC.countCharakters(),charNumber)
 

@@ -5,7 +5,7 @@ from optparse import OptionParser
 
 import logging
 
-if __name__ == "__main__":
+def mainWC():
     mainWC_log = logging.getLogger('wc_log.main')
     mainWC_log.setLevel(logging.DEBUG)
     mainWC_log.info('\tStart MainWC program')
@@ -26,19 +26,22 @@ if __name__ == "__main__":
     for f in args:
         try:
             wc = PyWC.PyWC(f)
-            print("File = ",wc.usedFile())
+            print("File = ",wc.usedFile(),":",end="")
             if options.lineCount:
-                print("\tLines      = ",wc.countLines())
+                print("\tL = ",wc.countLines(),end="")
             if options.wordCount:
-                print("\tWords      = ",wc.countWords())
+                print(" W = ",wc.countWords(),end="")
             if options.charCount:
-                print("\tCharakters = ",wc.countCharakters())
+                print("\tC = ",wc.countCharakters(),end="")
             if not(options.lineCount or options.wordCount or options.charCount):
-                print("\tLines      = ",wc.countLines())
-                print("\tWords      = ",wc.countWords())
-
+                print("\tL = ",wc.countLines(),end="")
+                print("\tW = ",wc.countWords(),end="")
+            print()
         except IOError:
             mainWC_log.info('\tFile '+f+' do not exist')
             print('File',f,'do not exist')
 
     mainWC_log.info('\tFinish MainWC program')
+
+if __name__ == "__main__":
+    mainWC()

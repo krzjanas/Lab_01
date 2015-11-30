@@ -11,30 +11,35 @@ loggerWC.addHandler(fh)
 wc_log = logging.getLogger('wc_log.module')
 wc_log.setLevel(logging.DEBUG)
 
-def decor(fun,log):
-    msg = "Func: "+fun.__qualname__
+
+def decor(fun, log):
+    msg = "Func: " + fun.__qualname__
+
     def wrapper(*args, **kwargs):
         res = fun(*args, **kwargs)
-        log.info(msg+'\t Ans = '+str(res))
+        log.info(msg + '\t Ans = ' + str(res))
         return res
+
     return wrapper
 
+
 def decorMod(fun):
-    return decor(fun,wc_log)
+    return decor(fun, wc_log)
 
 
 class PyWC:
     def __init__(self, fileName):
-        wc_log.info("Constr: PyWC obiect creation for file "+fileName)
-
+        wc_log.info("Constr: PyWC obiect creation for file " + fileName)
         self.fileName = fileName
+        self._setValues()
 
-        with open(fileName) as fileWC:
+    def _setValues(self):
+        with open(self.fileName) as fileWC:
             lines = fileWC.readlines()
 
-        self.linesCounter     = len(lines)
-        self.wordsCounter      = sum( len(l.split()) for l in lines )
-        self.charaktersCounter = sum( len(l) for l in lines )
+        self.linesCounter = len(lines)
+        self.wordsCounter = sum(len(l.split()) for l in lines)
+        self.charaktersCounter = sum(len(l) for l in lines)
 
     @decorMod
     def usedFile(self):
@@ -53,19 +58,16 @@ class PyWC:
         return self.charaktersCounter
 
 
-
-
 testFileName = "TestFileForPyWC.dat"
 # TestFile:
-  #Ala ma kota
-  #a kot ma Ale
-  #Czy to dziala?
-  #Odpowiedz
+# Ala ma kota
+# a kot ma Ale
+# Czy to dziala?
+# Odpowiedz
 
 if __name__ == "__main__":
     mainMod = logging.getLogger('wc_log.module.main')
     mainMod.info('\tStart main in PyWC module')
-
 
     try:
         TestWC = PyWC(testFileName)
@@ -82,6 +84,4 @@ if __name__ == "__main__":
         print("Stworz nowy plik testowy: \n\tTest_PyWC.dat\n a nastepnie umiesc w nim nastepujace linijki:\n")
         print("Ala ma kota\na kot ma Ale\nCzy to dziala?\nOdpowiedz");
 
-
     mainMod.info('\tFinish main in PyWC module')
-
